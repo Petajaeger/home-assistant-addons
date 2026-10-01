@@ -1,0 +1,24 @@
+name: Offwego Linux Helper
+version: "0.1.2"
+slug: offwego_linux_helper
+description: Offwego Helper for Raspberry Pi and Home Assistant OS
+url: https://github.com/Petajaeger/home-assistant-addons/tree/main/offwego
+arch:
+  - aarch64
+startup: services
+boot: auto
+init: false
+host_network: true
+hassio_api: true
+hassio_role: manager
+environment:
+  OFFWEGO_ALLOW_SYSTEM_ACTIONS: "true"
+  OFFWEGO_DATA_DIR: "/data/offwego"
+  OFFWEGO_DEVICE_NAME: "Home Assistant"
+  OFFWEGO_PUSH_INGRESS: "true"
+  OFFWEGO_PUSH_ADMIN_PORT: "18790"
+ingress: true
+ingress_port: 18790
+panel_icon: mdi:bell-ring
+options: {}
+schema: false
