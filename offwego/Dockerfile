@@ -1,6 +1,6 @@
 FROM alpine:3.23
 
-LABEL io.hass.version="0.1.2" io.hass.type="app" io.hass.arch="aarch64"
+LABEL io.hass.version="0.1.3" io.hass.type="app" io.hass.arch="aarch64"
 
 RUN apk add --no-cache ca-certificates icu-libs libgcc libstdc++ curl
 

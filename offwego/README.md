@@ -2,11 +2,13 @@
 
 Offwego macht den Home-Assistant-Host im lokalen Netzwerk auf iPhone und iPad sichtbar. Verfügbar für ARM64/aarch64, insbesondere Raspberry Pi 4 mit 64-Bit-Home-Assistant-OS.
 
-## Lokale Einrichtung
+## Kopplung für Neustart und Herunterfahren
 
 1. Offwego Linux Helper installieren und starten.
-2. Im Tab **Protokoll** den sechsstelligen **lokalen Kopplungscode** ablesen.
-3. Auf dem iPhone oder iPad Offwego öffnen, den Home-Assistant-Helper auswählen und mit diesem Code koppeln.
+2. In Home Assistant die Seite **Offwego Linux Helper** öffnen und den Tab **Protokoll** wählen. Dort steht der **sechsstellige Kopplungscode für Neustart und Herunterfahren**.
+3. Auf dem iPhone oder iPad Offwego öffnen und **Home Assistant** auswählen. Den Code im Feld **Sechsstelliger Code** eingeben und **Computer koppeln** antippen.
+
+Diese Kopplung erlaubt die Steuerung über Offwego. Der Code unter **Weboberfläche öffnen → Mit iPhone koppeln** ist ausschließlich für Push-Mitteilungen und schaltet Neustart und Herunterfahren nicht frei.
 
 Beide Geräte müssen sich für Erkennung und Systembefehle im selben lokalen Netzwerk befinden. Der Helper meldet sich per Bonjour/mDNS. Lokale Befehle werden verschlüsselt und authentifiziert übertragen.
 
@@ -58,7 +60,3 @@ Falls die neue Installation nicht funktioniert, diese stoppen und die bisherige 
 - **Code abgelaufen:** Einen neuen Push-Code erzeugen. Dieser Code gehört zur Push-Einrichtung auf dem iPhone, nicht zur lokalen Kopplung.
 - **Push-Dienst nicht erreichbar:** Internetverbindung prüfen und später erneut versuchen. Bereits gespeicherte Zugänge bleiben erhalten; Statusmeldungen werden erneut versucht. Lokale Offwego-Befehle bleiben unabhängig davon verfügbar.
 - **Helper wird nicht entdeckt:** Beide Geräte ins gleiche lokale Netz bringen und prüfen, ob Bonjour/mDNS durch das Netzwerk erlaubt wird.
-
-## Prüfumfang
-
-Version 0.1.2: ARM64/musl-Paket gebaut; Linux-Kopplungs-, CLI-, Zugriffsschutz- und Persistenztests bestanden. Die Weboberfläche wurde in einer lokalen Testumgebung geprüft. Installation, Containerlaufzeit und echte Push-Zustellung auf Home-Assistant-Hardware sind noch zu bestätigen. Die bisherige Version wurde bereits auf Home-Assistant-Pi eingerichtet und lokal gekoppelt.

@@ -1,3 +1,9 @@
+## 0.1.3
+
+- Anleitung: sechsstelliger Kopplungscode für Neustart und Herunterfahren im Tab Protokoll klar beschrieben.
+- Lokale Steuerung und Push-Kopplung verständlich getrennt.
+- Interne Prüfhinweise aus der Benutzeranleitung entfernt.
+
 # Changelog
 
 ## 0.1.2
