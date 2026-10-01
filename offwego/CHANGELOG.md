@@ -1,3 +1,7 @@
+## 0.1.4
+
+- Helper-Version wird für die Anzeige in Offwego auf iPhone und iPad übermittelt.
+
 ## 0.1.3
 
 - Anleitung: sechsstelliger Kopplungscode für Neustart und Herunterfahren im Tab Protokoll klar beschrieben.

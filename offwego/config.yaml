@@ -1,5 +1,5 @@
 name: Offwego Linux Helper
-version: "0.1.3"
+version: "0.1.4"
 slug: offwego_linux_helper
 description: Offwego Helper for Raspberry Pi and Home Assistant OS
 url: https://github.com/Petajaeger/home-assistant-addons/tree/main/offwego
@@ -12,6 +12,7 @@ host_network: true
 hassio_api: true
 hassio_role: manager
 environment:
+  OFFWEGO_HELPER_VERSION: "0.1.4"
   OFFWEGO_ALLOW_SYSTEM_ACTIONS: "true"
   OFFWEGO_DATA_DIR: "/data/offwego"
   OFFWEGO_DEVICE_NAME: "Home Assistant"
