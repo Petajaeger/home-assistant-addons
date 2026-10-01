@@ -35,4 +35,4 @@ Im Add-on-Store **⋮ → Nach Updates suchen** wählen. Die Offwego-App öffnen
 
 [Einrichtung, Push und Fehlerbehebung](offwego/DOCS.md)
 
-Die Repository-Struktur und Update-Erkennung folgen der [Home-Assistant-Dokumentation](https://developers.home-assistant.io/docs/apps/repository/). Die lokal gebauten ARM64-Pakete sind noch auf echter Home-Assistant-Hardware zu bestätigen.
+Die Repository-Struktur und Update-Erkennung folgen der [Home-Assistant-Dokumentation](https://developers.home-assistant.io/docs/apps/repository/).
